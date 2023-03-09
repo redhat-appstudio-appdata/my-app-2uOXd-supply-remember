@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ikj2
+  namespace: balkov-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:635c85aae61337ca1312ef48cc21d38afd9eab9a9694976b902aa3f8cde31283
+        name: my-python
+        resources: {}
+status: {}
